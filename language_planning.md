@@ -13,35 +13,35 @@ B -> + | - | * | /
 
 ### 105 * 13
 
-S ->
+S ⊢
 
-ABA ->
+ABA ⊢
 
-A * A ->
+A * A ⊢
 
-AA * AA ->
+AA * AA ⊢
 
-AAA * AA ->
+AAA * AA ⊢
 
 105 * 13
 
 ### ((15 + 3) * 4) + (3 / 3)
 
-S -> 
+S ⊢
 
-SBS -> 
+SBS ⊢
 
-S + S -> 
+S + S ⊢
 
-(S) + (S) -> 
+(S) + (S) ⊢
 
-(SBS) + (ABA) -> 
+(SBS) + (ABA) ⊢
 
-((S) * S) + (ABA) -> 
+((S) * S) + (ABA) ⊢
 
-((ABA) * A) + (ABA) ->
+((ABA) * A) + (ABA) ⊢
 
-((AA + A) * A) + (A / A) ->
+((AA + A) * A) + (A / A) ⊢
 
 ((15 + 3) * 4) + (3 / 3)
 

@@ -6,21 +6,32 @@
 + Mick Torres
 + Mark Maloney
 
-## Project Description
-### Part 1 - Design a Formal Language
+## Project Description:
+### Part 1:
+The explanation of the language is written in language_description.md
+### Part 2:
+The grammar and production rules, as well as some valid examples of strings in the language are in production_rules.md
+### Part 3:
+The automaton is included in the repo in PDAGraph.png, but also attached here:
 
-Create a non-trivial language of your choice. Your language can be based on patterns, constraints, hobbies, programming languages, or purely imaginative constructs. Get creative and have some fun here. Examples include (but are not limited to): arithmetic expressions, colloquial language (e.g., slang), music, and sports.
+![alt text](PDAGraph.png)
+### Part 4:
+The data structure is defined in pda_representation.txt, and uses a similar structure to the example structure on canvas, but with an additional parameter A->B that notates what is popped (A) and pushed (B) to the stack. In the txt file, 'l' represents lambda because the lambda character had difficulty being read by the python script in part 5.
 
-Your language must include an alphabet (set of symbols) and a clear set of rules or patterns for valid strings in the language (semantics). A short written explanation (1-2 pages) describing the intent, structure, and purpose of the language must be provided.
-### Part 2 - Grammar
+Line 1: A whitespace-separated list of states
 
-Using formal grammar rules (regular, context-free, unrestricted, depending on the complexity of the language), write a precise grammar that generates all valid strings of the language. The grammar should be specified using production rules that clearly define how strings in the language are formed. 
-### Part 3 - Automaton
+Line 2: A whitespace-separated list of input symbols
 
-Based on your designed language and grammar, implement an automaton to recognize whether a given string belongs to the language. If your language takes into account memory or state, be sure to use a PDA or Turing machine. For this section of the project I am expecting a visual diagram of your automaton. No hand-drawn visuals will be accepted, you must generate some form of digital automaton (e.g., LaTeX or Graphviz).
-### Part 4 - Data Structure
+Line 3: A whitespace-separated list of the stack symbols
 
-Design and implement a data structure that represents the automaton in memory. The data structure should capture the essential components of the automaton such as states, transitions, start state, accepting states, etc. 
+Line 4: Start symbol
 
-You must include a written description of your data structure, clearly defining each component and how they work.
+Line 5: A whitespace-separated list of accept states
+
+Lines 6-60: Transitions in the form {current state} {input symbol} {stack action} {next state}
+### Part 5:
+The code defining the automaton is in automaton.py, which includes the functions for checking whether a string is valid in the language, which is the test_string() member method of the automaton class.
+
+To test the code, you can run testing.py, which will auto run the test_string() function and just take user inputs of strings to test. testing.py can just be run like any python file, and will only need python to be installed and nothing else. If you want to manually type in test cases, you can import the Automaton class from automaton.py and write out test cases by initializing an automaton object and running the a.test_string(s) method.
+
 

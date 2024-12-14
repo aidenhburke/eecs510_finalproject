@@ -3,7 +3,7 @@
 
 ## Grammar Structure:
 
-**Alphabet: Σ = {(, ), +, -, *, /, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}**
+**Alphabet: Σ = {(, ), +, -, \*, /, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}**
 
 **Production Rules:**
 
@@ -55,4 +55,3 @@ S+S ⊢
 
 ((15+3)*4)+(3/3)
 
-![alt text](PDAGraph.png)
